@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Management</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Product Management</h1>
+
+    <!-- Form to Add a Product -->
+    <div class="form-container">
+      <h3>Add a Product</h3>
+      <input type="text" id="productName" placeholder="Product Name" />
+      <input type="number" id="productPrice" placeholder="Product Price" />
+      <button onclick="addProduct()">Add Product</button>
+    </div>
+
+    <!-- Table to List Products -->
+    <div class="table-container">
+      <h3>All Products</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="productList">
+          <!-- Dynamically populated products will go here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

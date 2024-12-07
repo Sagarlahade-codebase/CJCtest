@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Management</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Product Management System</h1>
+
+    <div class="form-container">
+      <h3>Add a Product</h3>
+      <button onclick="filterProduct()" id="sortAsn">Filter Product Based On Price</button>
+      
+      <input type="text" id="productName" placeholder="Product Name" />
+      <input type="number" id="productPrice" placeholder="Product Price" />
+      <button onclick="addProduct()">Add Product</button>
+    </div>
+
+    <div class="table-container">
+      <h3>All Products</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Actions</th>
+            
+          </tr>
+        </thead>
+        <tbody id="productList">
+          <!-- sagar javascript logic work here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
